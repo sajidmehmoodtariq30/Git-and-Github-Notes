@@ -94,7 +94,7 @@ We can delete a branch using the following command
 
     git branch -d <branch-name>
 
-### Head
+## Head
 
 Head is a pointer that points to the current branch. It is a way to keep track of where you are in your repository. You can use the following command to check where your head is pointing
 
@@ -107,3 +107,19 @@ Head is a pointer that points to the current branch. It is a way to keep track o
 Merging is a way to combine two branches together. It is a way to take the changes from one branch and apply them to another branch. You can use the following command to merge two branches together
 
     git merge <branch-name>
+
+## Branches
+
+Branches are used to work on different features or bug fixes at the same time. They allow you to work on multiple things at once without affecting the main code. You can create a branch for each feature or bug fix that you are working on. Once you are done with the feature or bug fix, you can merge it back into the main branch.
+You can use the following command to create a branch
+
+    git branch <branch-name>
+
+## Conflicts
+
+Conflicts occur when two branches have changes that are incompatible with each other. This can happen when two people are working on the same file at the same time. When this happens, git will not be able to merge the two branches together. You will need to resolve the conflicts manually. You can use the following command to see what files have conflicts
+
+    git status
+    git diff --name-only --diff-filter=U
+
+We can find the difference between both branches and decide which code to keep
