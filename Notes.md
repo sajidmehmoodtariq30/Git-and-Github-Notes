@@ -58,3 +58,49 @@ commit is a way to save your changes to your repository. It is a way to record y
 
 This command will show you the history of your repository. It will show you all the commits that were made to the repository. You can use the --oneline flag to show only the commit message. This will make the output more compact and easier to read.
 
+## gitignore and gitkeep
+
+gitignore is a file that makes sure important files like env are not tracked.
+Its usually kept at the root of project and all the files and folders that we want to ignore are listed in it.
+Where as gitkeep is the exact opposite it tells git to track empty folders and it is usually kept in the empty folder that we want to track.
+
+## Branches
+
+Branch is a way to create a copy of your code. It is a way to work on a new feature or a new bug fix without affecting the main code.
+
+We can check our branch by using the following command
+
+    git branch
+
+We can create a branch using the following command
+
+    git branch <branch-name>
+
+we can move to a branch using the following command
+
+    git switch <branch-name>
+
+We can use a -c flag to create a new branch and switch to it at the same time
+
+    git switch -c <branch-name>
+
+we can use checkout to switch to a branch
+
+    git checkout <branch-name>
+
+Difference between switch and checkout is that switch is a new command that is used to switch between branches. It is a more user-friendly way to switch between branches. Checkout is an older command that is used to switch between branches. It is a more powerful command that can be used to do more things, but it is also more complex and harder to use.
+
+We can delete a branch using the following command
+
+    git branch -d <branch-name>
+
+### Head
+
+Head is a pointer that points to the current branch. It is a way to keep track of where you are in your repository. You can use the following command to check where your head is pointing
+
+    git show-branch
+                            or
+    git show-branch --all
+
+git switch -c dark-mode
+git checkout orange-mode
