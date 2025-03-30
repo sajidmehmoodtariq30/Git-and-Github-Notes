@@ -102,5 +102,8 @@ Head is a pointer that points to the current branch. It is a way to keep track o
                             or
     git show-branch --all
 
-git switch -c dark-mode
-git checkout orange-mode
+## Merging
+
+Merging is a way to combine two branches together. It is a way to take the changes from one branch and apply them to another branch. You can use the following command to merge two branches together
+
+    git merge <branch-name>
